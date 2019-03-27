@@ -2,7 +2,7 @@
 Library   RequestsLibrary
 
 *** Test Cases ***
-account 38200015 ฝาก 500 จะได้ QR Code 3820001520190325194500
+account 38200015 ฝาก 500 ณ เวลา 25/03/2019 19:45:00 จะได้ QR Code 3820001520190325194500
     Create Session    Bomb's Bank    http://localhost:8080
     &{request}=    Create Dictionary    account_no=38200015    amount=500
     ${response}=   POST Request     Bomb's Bank    /check_deposit     json=${request}
