@@ -19,5 +19,5 @@ ID 0002 จะต้อง Return Error 0001 Account Not Found
 
 *** Keywords ***
 create bomb bank session
-    Create Session    Bomb's Bank    http://uat.bomb.com
+    Create Session    Bomb's Bank    http://localhost:8080
 
